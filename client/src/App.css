@@ -1,0 +1,78 @@
+.App {
+  text-align: center;
+}
+
+
+
+.App-header {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-size: calc(10px + 2vmin);
+  color: #282c34;
+}
+
+/* 
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+} */
+
+
+/* Navbar */
+.navbar .btn {
+  background-color: #1E91B6;
+  color: #fff;
+  transition: all 250ms ease-in;
+}
+
+.navbar .btn:hover {
+  background-color: #196680;
+}
+
+.footer {
+  background-color: #FAFAFB;
+}
+
+
+/*  */
+.mostSearchedPlaces img {
+  height: 100px;
+  width: 135px;
+}
+
+
+/*Place Search Label Transition*/
+
+/* If input is not empty */
+input:not(:placeholder-shown) ~ .input-text {
+ .transform {
+  transform: translateY(-9px) translateX(-4px) scale(0.9);
+}
+}
+input:focus ~.input-text {
+  /* You need to add a placeholder to your fields. For example: <input "placeholder=" "/> */
+.transform {
+  transform: translateY(-9px) translateX(-4px) scale(0.9);
+} 
+}
+/* input:placeholder-shown ~.input-text{
+  @apply  transform -translate-y-9 -translate-x-4 scale-90;
+} */
+
+/* If input is empty */
+/* input:placeholder-shown {
+  border-color: red;
+} */
+
+.svg{
+  width: 120px;
+  height: 120px;
+  margin: 20px;
+  display:inline-block;
+}
