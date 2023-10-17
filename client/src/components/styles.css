@@ -292,3 +292,23 @@
 width: 100%;
    }
 }
+
+#users{
+    @media screen and (max-width:850px) {
+        width :100% ;
+    }
+}
+#mybooking {
+@media screen and (max-width:1400px) {
+        padding:8px;
+    }
+ @media screen and (max-width:1000px) {
+              flex-direction:column;
+              padding-right:8px;
+         }
+                 @media screen and (max-width:505px) {
+                    width:100%;
+                    font-size:small;
+
+                 }
+}
