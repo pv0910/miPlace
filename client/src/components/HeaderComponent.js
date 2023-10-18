@@ -101,7 +101,7 @@ const HeaderComponent = () => {
                 <li className="md:ml-8  text-xl md:my-0 my-7 font-mullish cursor-pointer ">
                   <button
                     // style={currentTab(history, "/signup")}
-                    className="border-2 text-bold   p-3 rounded-md  2 transition ease-in-out delay-100 bg-red-600 hover:-translate-y-1 hover:scale-105 hover:bg-red-900 duration-300 text-white my-2"
+                  className="border-2 text-bold   p-3 rounded-md  2 transition ease-in-out delay-100  bg-[#1E91B6] hover:-translate-y-1 hover:scale-105 hover:bg-indigo-500 duration-300 text-white my-2"
                     onClick={() => {
                       navigate("/allUsers");
                     }}

@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { FaHotel } from "react-icons/fa";
 import { AiFillClockCircle } from "react-icons/ai";
+import "./styles.css";
 
 function Bookingreceipt({ hotel_name, firstDay, secondDay, noOfDays, url }) {
   const [bookingNum, setBookingNum] = useState(0);
@@ -9,8 +10,8 @@ function Bookingreceipt({ hotel_name, firstDay, secondDay, noOfDays, url }) {
     setBookingNum(calc);
   }, []);
   return (
-    <div class="flex my-[3rem] mx-[3.125rem]">
-      <div className="bg-[#ECFAFF]  w-[15.375rem] h-[18rem] p-[2rem]">
+    <div id="mybooking" class="flex flex-row justify-center items- center  ">
+      <div className="bg-[#ECFAFF]  h-[18rem] p-[2rem] border-2">
         <div className="mx-auto my-auto gap-auto w-[11.75rem] h-[3.625] ">
           <h1 className="font-semibold text-[2rem]">{firstDay}</h1>
           <p className="font-medium text-[0.75rem]">Check-In</p>
@@ -32,9 +33,9 @@ function Bookingreceipt({ hotel_name, firstDay, secondDay, noOfDays, url }) {
         </div>
       </div>
 
-      <div className="w-[49.1875rem] h-[19.3125rem] ">
-        <div className="flex justify-between p-[2rem] h-[6rem] bg-[#1E91B6]">
-          <div className="flex">
+      <div className=" h-[18rem] border-2  ">
+        <div className="flex justify-between  p-[2rem] h-[6rem] bg-[#1E91B6]">
+          <div className="flex mx-2 ">
             <h2 className="text-bold">{hotel_name}</h2>
    
           </div>
@@ -67,16 +68,16 @@ function Bookingreceipt({ hotel_name, firstDay, secondDay, noOfDays, url }) {
         </div>
       </div>
 
-      <div className="w-[19.9375rem] h-[19.3125rem] ">
+      {/* <v className="w-[19.9375rem] h-[19.3125rem] ">
         
         <img src={url} />
-      </div>
+      </v> */}
 
-      <div>
+      {/* <div>
         <h1 className=" border-2 border-[#A1A1A1] rounded-full text-sm w-[6rem] mt-[7rem] px-3">
           <p>{noOfDays} Night</p>
         </h1>
-      </div>
+      </div> */}
     </div>
   );
 }
